@@ -1,0 +1,101 @@
+body {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.label {
+  letter-spacing: 7px;
+}
+
+.tooltip { 
+    position: absolute;     
+    text-align: center;     
+    width: 75px;          
+    height: 14px;         
+    padding: 2px;       
+    font: 12px sans-serif;    
+    background: lightsteelblue; 
+    border: 0px;    
+    border-radius: 8px;     
+    pointer-events: none;     
+}
+
+#controlpanel {
+  font-size: 14px;
+}
+
+#fixedscalearea, #pergamearea, #yearsliderarea, .lowrank, #rankrangesliderarea, #ranksizesliderarea {
+  float: left;
+}
+
+#fixedscalearea, #pergamearea {
+  width: 80px;
+}
+
+#yearslider {
+	width: 200px;
+}
+
+#yearsliderarea {
+	width: 215px;
+}
+
+.lowvalue, .highvalue {
+  padding-top: 4px;
+} 
+
+.highvalue {
+	float: right;
+  padding-right: 13px;
+}
+
+.lowvalue {
+  float: left;
+}
+
+#rankrangesliderarea, #ranksizesliderarea {
+  padding-left: 15px;
+}
+
+#rankrangesliderarea {
+  width: 180px;
+}
+
+#rankrangeslider {
+  width: 165px;
+}
+
+#ranksizesliderarea {
+  width: 150px;
+}
+
+#ranksizeslider {
+  width: 135px;
+}
+
+input[type=checkbox] {
+  transform: scale(1.5);
+}
+
+.ui-slider-horizontal {
+  height: 18px;
+}
+.ui-slider .ui-slider-handle {
+  height: 25px;
+  width: 5px;
+  padding-left: 5px;
+}

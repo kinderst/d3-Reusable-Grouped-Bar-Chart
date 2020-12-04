@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reusable Grouped Bar</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="groupedbar.css">
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="barreuse.js"></script>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://d3js.org/d3-queue.v3.min.js"></script>
+    <script src="clientScript.js"></script>
+  </head>
+  <body>
+    <div id="grapharea"></div>
+    <div id="controlpanel">
+      <div id="fixedscalearea">
+        <input type="checkbox" id="fixedscale"/>Fixed Scale
+      </div>
+      <div id="pergamearea">
+        <input type="checkbox" id="pergame"/>Per Game
+      </div>
+      <div id="yearsliderarea">
+        Years: <span id="minyear">2014</span> - <span id="maxyear">2015</span>
+        <div id="yearslider"></div>
+        <span class="lowvalue">1992</span><span class="highvalue">2015</span>
+      </div>
+      <div id="rankrangesliderarea">
+        Rank Range: <span id="minrankrange">1</span> - <span id="maxrankrange">20</span>
+        <div id="rankrangeslider"></div>
+        <span class="lowvalue">1</span><span class="highvalue">40</span>
+      </div>
+      <div id="ranksizesliderarea">
+        Rank Group Size: <span id="ranksize">1</span>
+        <div id="ranksizeslider"></div>
+        <span class="lowvalue">1</span><span class="highvalue">10</span>
+      </div>
+      <div id="showpositionsarea">
+        <input type="checkbox" id="showqb" checked />QB
+        <input type="checkbox" id="showrb" checked />RB
+        <input type="checkbox" id="showwr" checked />WR
+        <input type="checkbox" id="showte" checked />TE
+      </div>
+    </div>
+  </body>
+</html>
